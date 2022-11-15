@@ -18,7 +18,7 @@
 </head>
 <body>
     <header class="site-header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top color">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3" style="background-color:rgb(50 22 82); font-family: 'Roboto Slab', serif">
           <div class="container">
             <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Django Blog</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,39 +56,33 @@
             {% endif %}
             {% block content %}{% endblock %}
           </div>
-          <!-- <div class="col-md-4">
-            <div class="content-section"> -->
-              <!-- <h3>Our Sidebar</h3>
-              <p class='text-muted'>You can put any information here you'd like.
-                <ul class="list-group">
-                  <li class="list-group-item list-group-item-light" href="">Announcements</li>
-                  <li class="list-group-item list-group-item-light">Calendars</li>
-                  <li class="list-group-item list-group-item-light">etc</li>
-                </ul>
-              </p> -->
-              <!-- <p>
-                Do you want to talk to us? Let us have some conversation.
-              </p>
-              <ul class="social-link">
-                <li>
-                  <a href="#" class="icon-box discord">
-                    <ion-icon name="logo-discord"></ion-icon>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="icon-box twitter">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="icon-box facebook">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-              </ul>
-            </div> -->
+          
           </div>
         </div>
+        <footer class="text-center text-lg-start bg-white text-muted">
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+              <span class="footer-span">Get connected with us on social networks:</span>
+            </div>
+            <div>
+              <a href="" class="me-4 link-secondary">
+                <ion-icon name="logo-facebook" size="large" style="color:rgb(50,22,82)"></ion-icon>
+              </a>
+              <a href="" class="me-4 link-secondary">
+                <ion-icon name="logo-linkedin" size="large" style="color:rgb(50,22,82)"></ion-icon>
+              </a>
+              <a href="" class="me-4 link-secondary">
+                <ion-icon name="logo-github" size="large" style="color:rgb(50,22,82)"></ion-icon>
+              </a>
+            </div>
+          </section>
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        
       </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

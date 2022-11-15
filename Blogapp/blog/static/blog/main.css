@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@300&display=swap');
+
 body {
     background: #fafafa;
     color: #333333;
@@ -10,10 +13,6 @@ body {
   
   ul {
     margin: 0;
-  }
-  
-  .bg-steel {
-    background-color: #5f788a;
   }
   
   .site-header .navbar-nav .nav-link {
@@ -29,19 +28,22 @@ body {
   }
   
   .content-section {
-    background: #ffffff;
+    background: #ddd1df;
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 4px 1px rgb(0 0 0 / 45%);
   }
   
   .article-title {
-    color: #444444;
+    color: rgb(50,22,82);
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
   }
   
   a.article-title:hover {
-    color: #428bca;
+    color: rgb(85, 49, 126);
     text-decoration: none;
   }
   
@@ -61,6 +63,10 @@ body {
     border-bottom: 1px solid #e3e3e3
   }
   
+  .article-metadata a, .footer-span{
+    color: rgb(50,22,82);
+  }
+
   .article-metadata a:hover {
     color: #333;
     text-decoration: none;
@@ -82,3 +88,31 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
+
+  .read-more{
+    color:rgb(136, 77, 190)
+  }
+
+  .btn-info {
+    color: #fff;
+    background-color: rgb(50 22 82);
+    border-color: #533d70;
+}
+
+.btn-outline-info {
+  color: rgb(50 22 82);
+  background-color: transparent;
+  background-image: none;
+  border-color: rgb(50,22,82);
+}
+
+.btn-info:hover{
+  color:rgb(78, 39, 122);
+}
+
+.btn-outline-info:hover{
+  color:rgb(78, 39, 122);
+}
+footer{
+  
+}
